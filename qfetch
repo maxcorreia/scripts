@@ -4,5 +4,5 @@
 # Dependencies: figlet
 
 # It is just one line, but is made in the hopes of encouraging others to play around with shell scripting by showing how simple it is to string commands together
-echo $(whoami)@$(hostname) $(uname -ro) | figlet
+echo $(whoami)@$(hostname) $(uname -sr) | figlet
 
