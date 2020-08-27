@@ -9,7 +9,7 @@ if [ $1 ]
 then
         mpv "https://twitch.tv/"$1
 
-# If the argument is not given, the user is asked for a name
+# Otherwise ask for a name
 else
         echo Enter the streamer you wish to view
         read streamer
