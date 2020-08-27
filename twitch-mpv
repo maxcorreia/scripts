@@ -1,5 +1,6 @@
 #!/bin/sh
 # A quick script to make accessing twitch streams easier
+# Written by Max Correia
 # Dependencies: mpv
 
 # Use the argument as the streamer input
