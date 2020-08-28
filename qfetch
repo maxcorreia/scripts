@@ -3,4 +3,10 @@
 # Written by Max Correia
 # Dependencies: figlet
 
-echo $(whoami)@$(hostname) $(uname -sr) | figlet
+# Arguments can be made for figlet fonts
+if [ $1 ]
+then
+        echo $(whoami)@$(hostname) $(uname -sr) | figlet -f $1
+else
+        echo $(whoami)@$(hostname) $(uname -sr) | figlet
+fi
