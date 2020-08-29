@@ -4,7 +4,7 @@ This is an assortment of small tools that I made in order to perform tasks with 
 
 I have no intentions of dissuading Windows users from trying some of these out, but those few who are interested in these tools will likely have to install extra applications in order to run these (Cygwin, MinGW).
 
-![qfetch screenshot with smslant font](qfetch.png)
+![qfetch screenshot with smslant font](qfetch.png "qfetch screenshot")
 
 ## Planned feature checklist
 ### qfetch
