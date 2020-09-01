@@ -1,0 +1,4 @@
+#!/bin/sh
+# qfetch for resource-limited machines
+# Written by Max Correia
+echo $(whoami)@$(hostname) $(uname -sr)
