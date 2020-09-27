@@ -1,0 +1,22 @@
+#!/bin/bash
+# bash + figlet anzan tool
+# Written by Max Correia
+# Dependencies: figlet
+
+total=0
+for i in {1..10}
+do
+    clear
+    new=$((10 + RANDOM % 91))
+    figlet $new
+    if [ $1 ]
+    then
+        sleep $1
+    else
+        sleep .75
+    fi
+    total=$((total+new))
+done
+clear
+sleep 2
+figlet $total
