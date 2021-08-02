@@ -1,18 +1,19 @@
 #!/bin/sh
-# A quick script to make accessing twitch streams easier
+# A quick script to make accessing twitch streams easier, can be combined with tiling window managers for a deck-like feel
 # Written by Max Correia
-# Dependencies: mpv
+# Dependencies: mpv, youtube-dl
 
 # Use the argument as the streamer input
 # ./twitch-mpv pokemon
 if [ $1 ]
 then
-        mpv "https://twitch.tv/"$1
-
+        for num in "$@"
+	do
+		mpv "https://twitch.tv/"$num &
+	done
 # Otherwise ask for a name
 else
         echo Enter the streamer you wish to view
         read streamer
         mpv --loop-file=inf "https://twitch.tv/"$streamer
 fi
-
