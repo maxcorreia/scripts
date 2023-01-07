@@ -1,0 +1,12 @@
+#!/bin/sh
+# A script to compress pdfs into 2x2 per sheet
+# Written by Max Correia
+
+# Dependencies: ghostscript, psutils
+
+if [ $1 ]
+then
+        pdf2ps $1 - | psnup -pA4 -4 | ps2pdfwr - >> output.pdf
+else
+        echo "No argument given: run pdf-shrink [pdf file]"
+fi
